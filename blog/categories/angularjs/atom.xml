@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[iArouse]]></title>
-  <link href="http://iarouse.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: angularjs | iArouse]]></title>
+  <link href="http://iarouse.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
   <updated>2013-10-30T19:59:27+08:00</updated>
   <id>http://iarouse.github.io/</id>
