@@ -4,7 +4,7 @@
   <title><![CDATA[iArouse]]></title>
   <link href="http://iarouse.github.io/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-10-30T14:59:00+08:00</updated>
+  <updated>2013-10-30T16:35:12+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -12,14 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Thanks]]></title>
-    <link href="http://iarouse.github.io/blog/2013/10/30/thanks/"/>
-    <updated>2013-10-30T14:46:00+08:00</updated>
-    <id>http://iarouse.github.io/blog/2013/10/30/thanks</id>
-    <content type="html"><![CDATA[<p>Thanks Github, thanks Octopress.</p>
-]]></content>
-  </entry>
   
 </feed>
