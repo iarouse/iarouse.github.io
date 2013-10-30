@@ -4,7 +4,7 @@
   <title><![CDATA[iArouse]]></title>
   <link href="http://iarouse.github.io/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-10-30T19:59:27+08:00</updated>
+  <updated>2013-10-30T22:04:31+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -14,19 +14,78 @@
 
   
   <entry>
-    <title type="html"><![CDATA[AngularJS Avoid Flash of Ustyled Content (FOUC)]]></title>
-    <link href="http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-ustyled-content-fouc/"/>
+    <title type="html"><![CDATA[AngularJS - Avoid Flash of Unstyled Content (FOUC)]]></title>
+    <link href="http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/"/>
     <updated>2013-10-30T17:10:00+08:00</updated>
-    <id>http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-ustyled-content-fouc</id>
-    <content type="html"><![CDATA[<ul>
-<li>use ng, like ng-class, ng-scr</li>
-<li>ng-cloak</li>
+    <id>http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc</id>
+    <content type="html"><![CDATA[<h2>When will FOUC happen?</h2>
+
+<ul>
+<li>When downloading the page yet AngularJS hasn&rsquo;t loaded and run to take care of the bindings.</li>
+<li>When the site is fetching data from the back end.</li>
 </ul>
 
 
-<p>When</p>
+<p>Then you&rsquo;ll see something like this:</p>
 
-<p>code here, with github repo</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{people.name}}
+</span><span class='line'>{{people.age}}</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>How to avoid Flash of Unstyled Content (FOUC) in AngularJS?</h2>
+
+<ul>
+<li>Use Angular&rsquo;s directive, like ng-bind, ng-class, ng-sct etc.</li>
+<li>Use <a href="http://docs.angularjs.org/api/ng.directive:ngCloak">ng-cloak</a></li>
+<li>Use loader, for instance, show the spinner while downloading the page, and hide it when angular has a chance to run</li>
+</ul>
+
+
+<h3>Use Angular&rsquo;s directive, like ng-bind, ng-class, ng-sct etc.</h3>
+
+<p>That is, instead of using</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;body class="{{ bodyClass }}"&gt;
+</span><span class='line'>&lt;img src="{{imgSrc}}" alt=""&gt;
+</span><span class='line'>&lt;p&gt;{{site.content}}&lt;/p&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>use</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;body ng-class="{{ bodyClass }}"&gt;
+</span><span class='line'>&lt;img ng-src="{{imgSrc}}" alt=""&gt;
+</span><span class='line'>&lt;p ng-bind="{{site.content}}"&gt;&lt;/p&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Use ng-cloak</h3>
+
+<p>You can refer to angularjs api for more info on how to use <a href="http://docs.angularjs.org/api/ng.directive:ngCloak">ng-cloak</a></p>
+
+<p>In short, you need to do 2 things:</p>
+
+<ol>
+<li>Add some CSS style in order to make ngCloak work</li>
+<li>Modify the markup</li>
+</ol>
+
+
+<h3>Use loader, and hide it when AngularJS runs</h3>
+
+<p>For instance, you can put the image loader in your HMTL, with <strong>ng-hide=&ldquo;true&rdquo;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;img scr="spinner.gif" ng-hide="true"/&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then it&rsquo;ll show the spinner before angularjs runs, and it will be hidden when angularjs comes in, since it has a ngHide directive that is set to true.</p>
 ]]></content>
   </entry>
   

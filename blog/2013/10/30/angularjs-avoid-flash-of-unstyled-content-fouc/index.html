@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>iArouse</title>
+	<title>AngularJS - Avoid Flash of Unstyled Content (FOUC) - iArouse</title>
 	<meta name="author" content="iArouse">
 
 	
@@ -74,18 +74,9 @@ When the site is fetching &hellip;">
 	
 		
 	
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/">
-		
-			AngularJS - Avoid Flash of Unstyled Content (FOUC)</a>
-	</h2>
-	<div class="entry-content">
-		<h2>When will FOUC happen?</h2>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">AngularJS - Avoid Flash of Unstyled Content (FOUC)</h2>
+	<div class="entry-content"><h2>When will FOUC happen?</h2>
 
 <ul>
 <li>When downloading the page yet AngularJS hasn&rsquo;t loaded and run to take care of the bindings.</li>
@@ -153,10 +144,7 @@ When the site is fetching &hellip;">
 
 
 <p>Then it&rsquo;ll show the spinner before angularjs runs, and it will be hidden when angularjs comes in, since it has a ngHide directive that is set to true.</p>
-
-		
-		
-	</div>
+</div>
 
 
 <div class="meta">
@@ -181,16 +169,31 @@ When the site is fetching &hellip;">
 
 </div>
 	
-	<div class="comments"><a href="/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/#disqus_thread">Comments</a></div>
+	<div class="comments"><a href="#disqus_thread">Comments</a></div>
 	
 </div>
 </article>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+		
+		
+		<a class="addthis_button_tweet"></a>
+		
+		
+		
+	</div>
+	
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2013
 
     iArouse
@@ -209,7 +212,10 @@ When the site is fetching &hellip;">
       var disqus_shortname = 'iarouse';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/';
+        var disqus_url = 'http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
