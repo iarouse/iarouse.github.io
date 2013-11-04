@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | iArouse]]></title>
   <link href="http://iarouse.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-04T16:47:38+08:00</updated>
+  <updated>2013-11-04T17:02:38+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -18,15 +18,7 @@
     <link href="http://iarouse.github.io/blog/2013/11/04/animation-in-angularjs/"/>
     <updated>2013-11-04T13:31:00+08:00</updated>
     <id>http://iarouse.github.io/blog/2013/11/04/animation-in-angularjs</id>
-    <content type="html"><![CDATA[<ul>
-<li>Read the well written AngularJS API <a href="http://docs.angularjs.org/api/ngAnimate">ngAnimate</a> to get up and runing.</li>
-</ul>
-
-
-<br/>
-
-
-<h3>ngHide and ngShow</h3>
+    <content type="html"><![CDATA[<h3>ngHide and ngShow</h3>
 
 <table>
 <thead>
