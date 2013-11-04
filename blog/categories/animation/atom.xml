@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: angularjs | iArouse]]></title>
-  <link href="http://iarouse.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
+  <title><![CDATA[Category: animation | iArouse]]></title>
+  <link href="http://iarouse.github.io/blog/categories/animation/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
   <updated>2013-11-04T16:47:38+08:00</updated>
   <id>http://iarouse.github.io/</id>
@@ -121,88 +121,6 @@
 &ndash; <a href="https://github.com/daneden/animate.css">Animate.css</a>
 &ndash; <a href="https://github.com/lvivski/anima">anima</a>
 &ndash; <a href="https://github.com/ThrivingKings/animo.js">animo.js</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[AngularJS - Avoid Flash of Unstyled Content (FOUC)]]></title>
-    <link href="http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc/"/>
-    <updated>2013-10-30T17:10:00+08:00</updated>
-    <id>http://iarouse.github.io/blog/2013/10/30/angularjs-avoid-flash-of-unstyled-content-fouc</id>
-    <content type="html"><![CDATA[<h2>When will FOUC happen?</h2>
-
-<ul>
-<li>When downloading the page yet AngularJS hasn&rsquo;t loaded and run to take care of the bindings.</li>
-<li>When the site is fetching data from the back end.</li>
-</ul>
-
-
-<p>Then you&rsquo;ll see something like this:</p>
-
-<p></p>
-
-<p><code>
-{{people.name}}
-{{people.age}}
-</code>
-</p>
-
-<h2>How to avoid Flash of Unstyled Content (FOUC) in AngularJS?</h2>
-
-<ul>
-<li>Use Angular&rsquo;s directive, like ng-bind, ng-class, ng-sct etc.</li>
-<li>Use <a href="http://docs.angularjs.org/api/ng.directive:ngCloak">ng-cloak</a></li>
-<li>Use loader, for instance, show the spinner while downloading the page, and hide it when angular has a chance to run</li>
-</ul>
-
-
-<h3>Use Angular&rsquo;s directive, like ng-bind, ng-class, ng-sct etc.</h3>
-
-<p>That is, instead of using</p>
-
-<p>
-```
-<body class="{{ bodyClass }}">
-<img src="{{imgSrc}}" alt=""></p>
-
-<p>{{site.content}}</p>
-
-
-<p>```
-</p>
-
-<p>use</p>
-
-<p>
-```
-<body ng-class="{{ bodyClass }}">
-<img ng-src="{{imgSrc}}" alt=""></p>
-
-<p ng-bind="{{site.content}}"></p>
-
-
-<p>```
-</p>
-
-<h3>Use ng-cloak</h3>
-
-<p>You can refer to angularjs api for more info on how to use <a href="http://docs.angularjs.org/api/ng.directive:ngCloak">ng-cloak</a></p>
-
-<p>In short, you need to do 2 things:</p>
-
-<ol>
-<li>Add some CSS style in order to make ngCloak work</li>
-<li>Modify the markup</li>
-</ol>
-
-
-<h3>Use loader, and hide it when AngularJS runs</h3>
-
-<p>For instance, you can put the image loader in your HMTL, with <strong>ng-hide=&ldquo;true&rdquo;</strong>
-<code>
-&lt;img scr="spinner.gif" ng-hide="true"/&gt;
-</code>
-Then it&rsquo;ll show the spinner before angularjs runs, and it will be hidden when angularjs comes in, since it has a ngHide directive that is set to true.</p>
 ]]></content>
   </entry>
   
