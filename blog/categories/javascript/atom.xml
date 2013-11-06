@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | iArouse]]></title>
   <link href="http://iarouse.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-04T17:02:38+08:00</updated>
+  <updated>2013-11-06T20:52:59+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -14,11 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Animation in AngularJS]]></title>
-    <link href="http://iarouse.github.io/blog/2013/11/04/animation-in-angularjs/"/>
+    <title type="html"><![CDATA[AngularJS Animation Examples]]></title>
+    <link href="http://iarouse.github.io/blog/2013/11/04/angularjs-animation-examples/"/>
     <updated>2013-11-04T13:31:00+08:00</updated>
-    <id>http://iarouse.github.io/blog/2013/11/04/animation-in-angularjs</id>
-    <content type="html"><![CDATA[<h3>ngHide and ngShow</h3>
+    <id>http://iarouse.github.io/blog/2013/11/04/angularjs-animation-examples</id>
+    <content type="html"><![CDATA[<h3></h3>
+
+<h3>ngHide and ngShow</h3>
 
 <table>
 <thead>
@@ -93,7 +95,7 @@
 <br/>
 
 
-<h2>AngularJS animation (1.2) Resource</h2>
+<h2>Learning AngularJS animation (1.2) Resource</h2>
 
 <ul>
 <li>Well written AngularJS API <a href="http://docs.angularjs.org/api/ngAnimate">ngAnimate</a></li>
@@ -104,15 +106,24 @@
 </ul>
 
 
-<p>Video Tutorial
-&ndash; <a href="http://egghead.io/lessons">http://egghead.io/lessons</a> &ndash; video 48, 49, 50
-&ndash; <a href="http://www.pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze">Building Apps with Angular and Breeze</a> &ndash; 11. Animations with Angular and CSS</p>
+<p>Video Tutorial:</p>
 
-<p>and CSS Animation
-&ndash; <a href="https://github.com/h5bp/Effeckt.css">Effeckt.css</a>
-&ndash; <a href="https://github.com/daneden/animate.css">Animate.css</a>
-&ndash; <a href="https://github.com/lvivski/anima">anima</a>
-&ndash; <a href="https://github.com/ThrivingKings/animo.js">animo.js</a></p>
+<ul>
+<li><a href="http://egghead.io/lessons">http://egghead.io/lessons</a> &ndash; video 48, 49, 50</li>
+<li><a href="http://www.pluralsight.com/training/Courses/TableOfContents/build-apps-angular-breeze">Building Apps with Angular and Breeze</a> &ndash; 11. Animations with Angular and CSS</li>
+</ul>
+
+
+<p>and CSS Animation:</p>
+
+<ul>
+<li><a href="https://github.com/h5bp/Effeckt.css">Effeckt.css</a></li>
+<li><a href="https://github.com/daneden/animate.css">Animate.css</a></li>
+<li><a href="https://github.com/lvivski/anima">anima</a></li>
+<li><a href="https://github.com/ThrivingKings/animo.js">animo.js</a></li>
+<li>and Codrops <a href="http://tympanus.net/codrops/tag/animation/">animation</a>, <a href="http://tympanus.net/codrops/tag/transition/">transition</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
