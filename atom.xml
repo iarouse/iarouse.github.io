@@ -4,7 +4,7 @@
   <title><![CDATA[iArouse]]></title>
   <link href="http://iarouse.github.io/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-08T15:05:09+08:00</updated>
+  <updated>2013-11-08T15:20:04+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -26,7 +26,7 @@
 <thead>
 <tr>
 <th></th>
-<th> URL           </th>
+<th align="center"> URL           </th>
 <th align="center"> Outcomes          </th>
 <th align="center"> Reason               </th>
 </tr>
@@ -34,61 +34,61 @@
 <tbody>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com/b.html">http://www.a.com/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com/b.html">http://www.a.com/b.html</a> </td>
 <td align="center"> Success </td>
 <td align="center"> Same protocol and host</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/dir/a.html">http://www.a.com/dir/a.html</a> <br /> <a href="http://www.a.com/dir2/b.html">http://www.a.com/dir2/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/dir/a.html">http://www.a.com/dir/a.html</a> <br /> <a href="http://www.a.com/dir2/b.html">http://www.a.com/dir2/b.html</a> </td>
 <td align="center"> Success </td>
 <td align="center"> Same protocol and host</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://username:password@www.a.com/b.html">http://username:password@www.a.com/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://username:password@www.a.com/b.html">http://username:password@www.a.com/b.html</a> </td>
 <td align="center"> Success </td>
 <td align="center"> Same protocol and host</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com:81/b.html">http://www.a.com:81/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com:81/b.html">http://www.a.com:81/b.html</a> </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different port. <br /> The default is <strong>80</strong>, the other is <strong>81</strong></td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="https://www.a.com/b.html">https://www.a.com/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="https://www.a.com/b.html">https://www.a.com/b.html</a> </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different protocol. <br />One is <strong>http</strong>, and the other is <strong>https</strong></td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.b.com/b.html">http://www.b.com/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.b.com/b.html">http://www.b.com/b.html</a> </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different host</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www2.a.com/b.html">http://www2.a.com/b.html</a> </td>
+<td align="center"><a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www2.a.com/b.html">http://www2.a.com/b.html</a> </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different host (exact match required)</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://a.com/b.html">http://a.com/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://a.com/b.html">http://a.com/b.html</a> </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different host (exact match required)</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://60.191.124.236/b.html">http://60.191.124.236/b.html</a> (The IP of site) </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://60.191.124.236/b.html">http://60.191.124.236/b.html</a> (The IP of site) </td>
 <td align="center"> <strong>Failure</strong> </td>
 <td align="center"> Different host (exact match required)</td>
 </tr>
 <tr>
 <td></td>
-<td> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com:80/b.html">http://www.a.com:80/b.html</a> </td>
+<td align="center"> <a href="http://www.a.com/a.html">http://www.a.com/a.html</a> <br /> <a href="http://www.a.com:80/b.html">http://www.a.com:80/b.html</a> </td>
 <td align="center"> <em>Don&rsquo;t use</em> </td>
 <td align="center"> Port explicit. Depends on implementation in browser.</td>
 </tr>
@@ -96,7 +96,7 @@
 </table>
 
 
-<p>In my project, I used <a href="http://yeoman.io/">Yeoman</a> AngularJS Generator to kickstart the project and automate the tasks. It comes with a <a href="http://gruntjs.com/">Grunt</a> plugin named <a href="https://github.com/gruntjs/grunt-contrib-connect">grunt-contrib-connect</a> to start a static web server.</p>
+<p>In my project, I used <a href="http://yeoman.io/">Yeoman</a> AngularJS Generator to kickstart the project and automate the tasks ( Loved it :D ). It comes with a <a href="http://gruntjs.com/">Grunt</a> plugin named <a href="https://github.com/gruntjs/grunt-contrib-connect">grunt-contrib-connect</a> to start a static web server.</p>
 
 <p>So here comes my problem, My AngularJS application is running on</p>
 
@@ -104,7 +104,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>http://localhost:9000/</span></code></pre></td></tr></table></div></figure>
 
 
-<p>While my NodeJS back end is running on</p>
+<p>While the NodeJS back end is running on</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>http://localhost:3000/</span></code></pre></td></tr></table></div></figure>
@@ -148,7 +148,7 @@
 
 <p>I am a little excited when I find it. It&rsquo;s well documented and easy to use.</p>
 
-<p>So I use it in my project.</p>
+<p>So I used it in my project.</p>
 
 <p>But after I do exact as it documented, grunt-connect-proxy is NOT working.</p>
 
