@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angularjs | iArouse]]></title>
   <link href="http://iarouse.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-08T15:20:04+08:00</updated>
+  <updated>2013-11-14T09:38:12+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -12,6 +12,108 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Use jQuery Plugin with AngularJS the Easy (Lazy) Way]]></title>
+    <link href="http://iarouse.github.io/blog/2013/11/14/use-jquery-plugin-with-angularjs-the-easy-lazy-way/"/>
+    <updated>2013-11-14T09:11:00+08:00</updated>
+    <id>http://iarouse.github.io/blog/2013/11/14/use-jquery-plugin-with-angularjs-the-easy-lazy-way</id>
+    <content type="html"><![CDATA[<p>Inevitably, we will use jQuery plugin with AngularJS.</p>
+
+<p>Ideally, we should convert the plugin into an AngularJS directive, like <a href="https://github.com/angular-ui/bootstrap">Angular UI Bootstrap</a> do.</p>
+
+<p>Yet today, we&rsquo;ll make the plugin work the easy (lazy) way.</p>
+
+<p>You just need to write less than 10 lines (if you use CoffeeScript) to make the plugin work.</p>
+
+<p>Before, we start, take a book at the <strong><a href="http://plnkr.co/edit/VeKu5lysANal26bRL4zN?p=preview">Demo Here</a></strong></p>
+
+<hr />
+
+<p>We&rsquo;ll <a href="https://github.com/fronteed/iCheck">jQuery iCheck plugin</a> in this example</p>
+
+<p>Normally, we&rsquo;ll include the CSS and JS file, and write some jQuery code to init it.</p>
+
+<p>In AngularJS we use a directive to handle it.</p>
+
+<h3>First, include the resource files</h3>
+
+<p>```html
+  <head></p>
+
+<pre><code>&lt;!-- The CSS file of iCheck plugin --&gt;
+&lt;link rel="stylesheet" href="http://damirfoy.com/iCheck/skin/all.css?v=0.9.1"&gt;
+&lt;!-- jQuery --&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;!-- The JS file of iCheck plugin --&gt;
+&lt;script src="http://damirfoy.com/iCheck/jquery.icheck.min.js?v=0.9.1"&gt;&lt;/script&gt;
+&lt;!-- AngularJS --&gt;
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"&gt;&lt;/script&gt;
+&lt;!-- Custom Script --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>  </head>
+```</p>
+
+<h3>Second, Write our markup</h3>
+
+<p>```html
+  <body data-ng-app="app"></p>
+
+<pre><code>&lt;h1&gt;Hello Plunker!&lt;/h1&gt;
+&lt;input type="radio" data-ui-radio data-radio-style="blue" name="iCheck"&gt;
+&lt;input type="radio" data-ui-radio data-radio-style="blue" name="iCheck" checked&gt;
+</code></pre>
+
+<p>  </body>
+```</p>
+
+<h3>Write an AngularJS direcitive to make it work</h3>
+
+<p>The JavaScript version:
+```javascript
+angular.module(&lsquo;app&rsquo;, []).directive(&lsquo;uiRadio&rsquo;, [ function () {</p>
+
+<pre><code>return {
+    restrict: 'A',
+    link: function (scope, ele, attrs) {
+        style = 'iradio_flat-' + ele.attr('data-radio-style');
+
+        ele.iCheck({
+            radioClass: style
+        });
+    }
+}
+</code></pre>
+
+<p>  }
+])
+```</p>
+
+<p>The CoffeeScript version (if you prefer):
+```coffeescript
+angular.module(&lsquo;app.form.ui&rsquo;, [])</p>
+
+<p>.directive(&lsquo;uiRadio&rsquo;, [ &ndash;></p>
+
+<pre><code>{
+    restrict: 'A'
+    link: (scope, ele, attrs) -&gt;
+        style = 'iradio_flat-' + ele.attr('data-radio-style')
+
+        ele.iCheck(
+            radioClass: style
+        )
+}
+</code></pre>
+
+<p>])
+```</p>
+
+<p>Again, you can refer to the <strong><a href="http://plnkr.co/edit/VeKu5lysANal26bRL4zN?p=preview">Demo Here</a></strong> to see the code.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cross Domain in AngularJS Development]]></title>
