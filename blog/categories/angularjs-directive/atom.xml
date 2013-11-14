@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angularjs directive | iArouse]]></title>
   <link href="http://iarouse.github.io/blog/categories/angularjs-directive/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-14T09:38:12+08:00</updated>
+  <updated>2013-11-14T09:54:49+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -30,11 +30,11 @@
 
 <hr />
 
-<p>We&rsquo;ll <a href="https://github.com/fronteed/iCheck">jQuery iCheck plugin</a> in this example</p>
+<p>We&rsquo;ll use <a href="https://github.com/fronteed/iCheck">jQuery iCheck plugin</a> in this example</p>
 
 <p>Normally, we&rsquo;ll include the CSS and JS file, and write some jQuery code to init it.</p>
 
-<p>In AngularJS we use a directive to handle it.</p>
+<p>In AngularJS, we use a directive to handle it.</p>
 
 <h3>First, include the resource files</h3>
 
@@ -54,7 +54,8 @@
 </code></pre>
 
 <p>  </head>
-```</p>
+```
+Note: normally, you&rsquo;ll want to put the scripts in the bottom, yet here we put all resources in the &ldquo;head&rdquo; for simplicity.</p>
 
 <h3>Second, Write our markup</h3>
 
@@ -67,7 +68,13 @@
 </code></pre>
 
 <p>  </body>
-```</p>
+<code>
+"data-ui-radio" is our directive :)
+and we use "data-radio-style" to make it more flexible, so that if user prefer a red one, he just need to change the value from "blue" to "red", like this"
+</code>
+data-radio-style=&ldquo;red&rdquo;
+```
+Again you can see it in action in the <strong><a href="http://plnkr.co/edit/VeKu5lysANal26bRL4zN?p=preview">Demo</a></strong></p>
 
 <h3>Write an AngularJS direcitive to make it work</h3>
 
