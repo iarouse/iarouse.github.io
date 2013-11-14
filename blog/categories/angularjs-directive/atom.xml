@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angularjs directive | iArouse]]></title>
   <link href="http://iarouse.github.io/blog/categories/angularjs-directive/atom.xml" rel="self"/>
   <link href="http://iarouse.github.io/"/>
-  <updated>2013-11-14T09:54:49+08:00</updated>
+  <updated>2013-11-14T09:58:05+08:00</updated>
   <id>http://iarouse.github.io/</id>
   <author>
     <name><![CDATA[iArouse]]></name>
@@ -18,15 +18,15 @@
     <link href="http://iarouse.github.io/blog/2013/11/14/use-jquery-plugin-with-angularjs-the-easy-lazy-way/"/>
     <updated>2013-11-14T09:11:00+08:00</updated>
     <id>http://iarouse.github.io/blog/2013/11/14/use-jquery-plugin-with-angularjs-the-easy-lazy-way</id>
-    <content type="html"><![CDATA[<p>Inevitably, we will use jQuery plugin with AngularJS.</p>
+    <content type="html"><![CDATA[<p>Inevitably, we will want to use jQuery plugin with AngularJS.</p>
 
 <p>Ideally, we should convert the plugin into an AngularJS directive, like <a href="https://github.com/angular-ui/bootstrap">Angular UI Bootstrap</a> do.</p>
 
 <p>Yet today, we&rsquo;ll make the plugin work the easy (lazy) way.</p>
 
-<p>You just need to write less than 10 lines (if you use CoffeeScript) to make the plugin work.</p>
+<p>You just need to write <strong>less than 10 lines</strong> (if you use CoffeeScript) to make the plugin work.</p>
 
-<p>Before, we start, take a book at the <strong><a href="http://plnkr.co/edit/VeKu5lysANal26bRL4zN?p=preview">Demo Here</a></strong></p>
+<p>Before we start, take a look at the <strong><a href="http://plnkr.co/edit/VeKu5lysANal26bRL4zN?p=preview">Demo Here</a></strong></p>
 
 <hr />
 
