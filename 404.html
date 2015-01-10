@@ -1,22 +1,39 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>iArouse</title>
-
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iarouse</title>
+    <meta name="description" content="Responsive Admin Templates and Admin Themes with Bootstrap &amp; AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300,700" rel="stylesheet">
+    <link href="fonts/themify-icons/themify-icons.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
   </head>
   <body>
-
-	<div class="center404">
-		<img src="images/404.png" alt="">
-	</div>
-    
+    <!--if lt IE 8
+    <div class="lt-ie8-bg">
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+        <br>
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+    -->
+    <div class="center404"><img src="assets/404.png" alt="404" class="img-responsive"></div>
+    <!-- Scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-58400131-1', 'auto');
+      ga('send', 'pageview');   
+    </script>
   </body>
 </html>
